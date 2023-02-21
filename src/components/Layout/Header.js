@@ -43,7 +43,7 @@ const Header = () => {
             <Link to="/" className="navbar-brand">
                  <img src='https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935'/>
             </Link>
-            <p className="nav-item dropdown" style={{marginLeft:"200px"}}>
+            {/* <p className="nav-item dropdown" style={{marginLeft:"200px"}}>
                 <Link
                   className="nav-link dropdown-toggle"
                   to={"/categories"}
@@ -64,7 +64,7 @@ const Header = () => {
                     </li>
                   ))}
                 </ul>
-             </p>
+             </p> */}
 
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />
