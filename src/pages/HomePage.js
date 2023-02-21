@@ -10,6 +10,7 @@ import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
 import Random  from 'rando-js'
 import { api } from "../config/config";
+import Offers from "../components/Layout/Offers";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -108,10 +109,11 @@ const HomePage = () => {
       console.log(error);
     }
   };
-  let cs = (x,y) => x + (y - x + 1)*crypto.getRandomValues(new Uint32Array(1))[0]/2**32 | 0
-  // let value = cs(x,y)
+
+
   return (
     <Layout title={"ALl Products - Best offers "}>
+    <Offers />
       {/* banner image */}
       {/* banner image */}
       <div className="container-fluid row mt-3 home-page">

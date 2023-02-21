@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
 import { useAuth } from "../../context/auth";
@@ -41,10 +41,10 @@ const Login = () => {
   };
   return (
     <Layout title="Register - Ecommer App">
-      <div className="form-container " style={{ minHeight: "90vh" }}>
+    <h1 className="text-center"  style={{fontSize:"50px",marginTop:"10px"}}>Login</h1>
+    <p className="text-center"  style={{marginTop:"10px"}}>Please enter your e-mail and password:</p>
+      <div className="form-container " style={{ minHeight: "80vh" }}>
         <form onSubmit={handleSubmit}>
-          <h4 className="title">LOGIN FORM</h4>
-
           <div className="mb-3">
             <input
               type="email"
@@ -68,21 +68,21 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-3">
-            <button
-              type="button"
-              className="btn forgot-btn"
+          <div className=" forgot">
+            <p
+              className=" forgot-btn"
               onClick={() => {
                 navigate("/forgot-password");
               }}
             >
               Forgot Password
-            </button>
+            </p>
           </div>
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn  loginbutton">
             LOGIN
           </button>
+          <p className="text-center mt-3" >New customer? <Link to='/register' >Create an account</Link> </p>
         </form>
       </div>
     </Layout>

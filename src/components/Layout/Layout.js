@@ -8,7 +8,6 @@ const Layout = ({ children, title, description, keywords, author }) => {
   return (
     <div>
       <Header />
-      <Offers />
       <main style={{ minHeight: "70vh" }}>
         {children}
       </main>
