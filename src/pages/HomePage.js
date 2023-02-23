@@ -132,7 +132,7 @@ const HomePage = () => {
             {products?.map((p) => (
               <div className="card m-2 align-items-center" key={p._id} style={{height:"490px",borderRadius:"10px",border:"none",width:"17.35rem",paddingTop:"10px"}}>
                 <img
-                  src={`/api/v1/product/product-photo/${p._id}`}
+                  src={`${api}/api/v1/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                   onClick={() => navigate(`/product/${p.slug}`)}
