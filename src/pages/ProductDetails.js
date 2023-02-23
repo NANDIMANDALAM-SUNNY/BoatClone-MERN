@@ -46,7 +46,7 @@ const ProductDetails = () => {
       <div className="col-md-3"></div>
         <div className="col-md-3">
           <img
-            src={`/api/v1/product/product-photo/${product?._id}`}
+            src={`${api}/api/v1/product/product-photo/${product?._id}`}
             className="card-img-top"
             alt={product.name}
             height="300"
