@@ -1,14 +1,12 @@
 {
-  "name": "Ecommerce-app-2023",
+  "name": "boat-clone-by-sunny",
   "version": "1.0.0",
-  "description": "ecommerce rest api",
+  "description": "boat-clone-by-sunny",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "nodemon server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix ./client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "Techinfoyt",
