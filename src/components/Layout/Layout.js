@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 import Header from "./Header";
 import { Toaster } from "react-hot-toast";
 import Offers from "./Offers";
@@ -11,7 +10,6 @@ const Layout = ({ children, title, description, keywords, author }) => {
       <main style={{ minHeight: "70vh" }}>
         {children}
       </main>
-      <Footer />
         <Toaster />
     </div>
   );

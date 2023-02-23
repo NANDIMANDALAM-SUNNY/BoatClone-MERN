@@ -70,16 +70,47 @@ const Header = () => {
               <SearchInput />
               {!auth?.user ? (
                 <>
-                  <li className="nav-item">
+                <p className="nav-item dropdown" style={{marginLeft:"200px"}}>
+                <Link
+                  className="nav-link dropdown-toggle"
+                  
+                  data-bs-toggle="dropdown"
+
+                >
+                     <CgProfile style={{fontSize:"30px",fontWeight:"100"}}/>
+                </Link>
+                <ul className="dropdown-menu">
+                 
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/register"
+                      >
+                        Register
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/login"
+                      >
+                        Login
+                      </Link>
+                    </li>
+                  
+                </ul>
+             </p>
+                  {/* <li className="nav-item">
                     <NavLink to="/register" className="nav-link">
                       Register
                     </NavLink>
+                    
                   </li>
                   <li className="nav-item">
                     <NavLink to="/login" className="nav-link">
                       Login
                     </NavLink>
-                  </li>
+                  </li> */}
                 </>
               ) : (
                 <>

@@ -5,7 +5,7 @@ import { api } from "../config/config";
 export default function useCategory() {
   const [categories, setCategories] = useState([]);
 
-  //get cat
+
   const getCategories = async () => {
     try {
       const { data } = await axios.get(`${api}/api/v1/category/get-category`);
