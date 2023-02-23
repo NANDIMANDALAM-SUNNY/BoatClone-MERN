@@ -56,6 +56,7 @@ const Login = () => {
               placeholder="Enter Your Email "
               required
             />
+            
           </div>
           <div className="mb-3">
             <input
@@ -67,6 +68,7 @@ const Login = () => {
               placeholder="Enter Your Password"
               required
             />
+           
           </div>
           <div className=" forgot">
             <p
@@ -83,6 +85,11 @@ const Login = () => {
             LOGIN
           </button>
           <p className="text-center mt-3" >New customer? <Link to='/register' >Create an account</Link> </p>
+          <div className="text-center">
+
+          <p>email: demologin@gmail.com</p>
+          <p>password: demologin@gmail.com</p>
+          </div>
         </form>
       </div>
     </Layout>
